@@ -1,0 +1,164 @@
+@charset "UFT-8";
+
+@font-face {
+    font-family: Minecraft;
+    src: url("Minecraftia-Regular.ttf");
+}
+:root {
+    --menu-size: 232px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Minecraft";
+}
+
+
+body {
+    background-image:"imagens/37441(1).jpg";
+    height: 170vh;
+    background-color: #eee;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: unset;
+}
+
+header {
+    background-color: rgb(21, 22, 29);
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.content {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: aliceblue;
+    border:rgb(61, 60, 60);
+    border-radius: 0px 40px;
+    padding: auto;
+    border-width: .5px;
+    border-style: solid;
+    border-color: black;
+
+}
+
+.content p{
+    margin: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;  
+    text-shadow: 1px 1px 0 rgba(139, 139, 139, 0.8);
+    
+}
+
+.content div img {
+    width: 40%;
+    background-position: center;
+    background-color: azure;
+    border:rgb(61, 60, 60);
+    border-radius: 0px 40px;
+    padding: auto;
+    border-width: .5px;
+    border-style: solid;
+    border-color: black;
+    
+}
+
+.content table tr td img {
+    width: 40%;
+    background-position: center;
+    background-color: azure;
+    border:rgb(61, 60, 60);
+    border-radius: 10px 10px;
+    padding: auto;
+    border-width: .5px;
+    border-style: solid;
+    border-color: black;
+    
+}
+
+.content a{
+    margin: 20px;
+    color: black;  
+}
+
+#btnMenu {
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+#btnMenu:hover {
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(41, 57, 98);
+}
+
+#btnMenu:active {
+    background-color: rgb(3, 4, 7);
+}
+
+#btnClose {
+    padding: 8px;
+    background-color: rgb(78, 37, 37);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#btnClose:active {
+    background-color: rgb(151, 73, 73);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: var(--menu-size);
+    height: 100%;
+    background-color: rgb(40, 42, 54);
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: block;
+}
+
+.menu ul li a {
+    transition: background 0.3s;
+    display: block;
+    color: #fff;
+    font-size: 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+.menu ul li a:hover {
+    background-color: rgb(49, 54, 85);
+}
+
+.effect {
+    transition: margin 0.4s;
+}
+
+@media (min-width: 768px) {
+    #btnClose {
+        display: none;
+    }
+}
+
+header>img {
+    height: 40px;
+}
